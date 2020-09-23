@@ -1,0 +1,123 @@
+<wsdl2:description xmlns:wsdl2="http://www.w3.org/ns/wsdl" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wrpc="http://www.w3.org/ns/wsdl/rpc" xmlns:tns="http://ws.wso2.org/dataservice" xmlns:wsoap="http://www.w3.org/ns/wsdl/soap" xmlns:ns0="http://ws.wso2.org/dataservice" xmlns:wsdlx="http://www.w3.org/ns/wsdl-extensions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:whttp="http://www.w3.org/ns/wsdl/http" targetNamespace="http://ws.wso2.org/dataservice"><wsdl2:documentation>Remittances Services untuk Agency Pospay versi 2.00 sesuai field BI+PPATK                                                                                                                                                                                                                                                                                       </wsdl2:documentation><wsdl2:types><xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ws.wso2.org/dataservice">
+<xs:element name="DataServiceFault" type="xs:string"/>
+<xs:element name="REQUEST_STATUS" type="xs:string"/>
+<xs:element name="DATA_SERVICE_RESPONSE">
+<xs:complexType>
+<xs:sequence>
+<xs:any minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_InquiryCashOut">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="RESPONS" type="ns0:RESPONS"/>
+<xs:complexType name="RESPONS">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="RESPON" type="ns0:RESPON"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="RESPON">
+<xs:sequence>
+<xs:element name="ID_RESPONSE" nillable="true" type="xs:string"/>
+<xs:element name="RESPONSE" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="rs_GetPostCode">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_ReversalCashOut">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_GetCharge">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_GetDeposit">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_ReversalSend">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_Trace">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_StoreSend">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="rs_CashOut">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ID_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="PASS_PETUGAS" nillable="true" type="xs:string"/>
+<xs:element name="IDTIPEREFNOMOR" nillable="true" type="xs:string"/>
+<xs:element name="DATA" nillable="true" type="xs:string"/>
+<xs:element name="SIGNATURE" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema></wsdl2:types><wsdl2:interface name="ServiceInterface"><wsdl2:fault name="DataServiceFault" element="ns0:DataServiceFault"/><wsdl2:operation name="rs_CashOut" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_CashOut" wsaw:Action="urn:rs_CashOut"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_CashOutResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_CashOutDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_InquiryCashOut" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_InquiryCashOut" wsaw:Action="urn:rs_InquiryCashOut"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_InquiryCashOutResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_InquiryCashOutDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_ReversalCashOut" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_ReversalCashOut" wsaw:Action="urn:rs_ReversalCashOut"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_ReversalCashOutResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_ReversalCashOutDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_ReversalSend" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_ReversalSend" wsaw:Action="urn:rs_ReversalSend"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_ReversalSendResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_ReversalSendDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_GetDeposit" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_GetDeposit" wsaw:Action="urn:rs_GetDeposit"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_GetDepositResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_GetDepositDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_StoreSend" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_StoreSend" wsaw:Action="urn:rs_StoreSend"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_StoreSendResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_StoreSendDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_GetCharge" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_GetCharge" wsaw:Action="urn:rs_GetCharge"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_GetChargeResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_GetChargeDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_Trace" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation>rs Trace Kiriman                                                                        </wsdl2:documentation><wsdl2:input element="ns0:rs_Trace" wsaw:Action="urn:rs_Trace"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_TraceResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_TraceDataServiceFault"/></wsdl2:operation><wsdl2:operation name="rs_GetPostCode" style="http://www.w3.org/ns/wsdl/style/multipart" pattern="http://www.w3.org/ns/wsdl/in-out"><wsdl2:documentation/><wsdl2:input element="ns0:rs_GetPostCode" wsaw:Action="urn:rs_GetPostCode"/><wsdl2:output element="ns0:RESPONS" wsaw:Action="urn:rs_GetPostCodeResponse"/><wsdl2:outfault ref="tns:DataServiceFault" wsaw:Action="urn:rs_GetPostCodeDataServiceFault"/></wsdl2:operation></wsdl2:interface><wsdl2:binding name="RemittanceServices_v2HttpBinding" interface="tns:ServiceInterface" type="http://www.w3.org/ns/wsdl/http"><wsdl2:operation ref="tns:rs_CashOut" whttp:method="POST" whttp:location="rs_CashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_InquiryCashOut" whttp:method="POST" whttp:location="rs_InquiryCashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_ReversalCashOut" whttp:method="POST" whttp:location="rs_ReversalCashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_ReversalSend" whttp:method="POST" whttp:location="rs_ReversalSend"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetDeposit" whttp:method="POST" whttp:location="rs_GetDeposit"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_StoreSend" whttp:method="POST" whttp:location="rs_StoreSend"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetCharge" whttp:method="POST" whttp:location="rs_GetCharge"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_Trace" whttp:method="POST" whttp:location="rs_Trace"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetPostCode" whttp:method="POST" whttp:location="rs_GetPostCode"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation></wsdl2:binding><wsdl2:binding name="RemittanceServices_v2SOAP11Binding" interface="tns:ServiceInterface" type="http://www.w3.org/ns/wsdl/soap" wsoap:version="1.1" wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP"><wsdl2:operation ref="tns:rs_CashOut" wsoap:action="urn:rs_CashOut" whttp:location="rs_CashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_InquiryCashOut" wsoap:action="urn:rs_InquiryCashOut" whttp:location="rs_InquiryCashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_ReversalCashOut" wsoap:action="urn:rs_ReversalCashOut" whttp:location="rs_ReversalCashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_ReversalSend" wsoap:action="urn:rs_ReversalSend" whttp:location="rs_ReversalSend"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetDeposit" wsoap:action="urn:rs_GetDeposit" whttp:location="rs_GetDeposit"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_StoreSend" wsoap:action="urn:rs_StoreSend" whttp:location="rs_StoreSend"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetCharge" wsoap:action="urn:rs_GetCharge" whttp:location="rs_GetCharge"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_Trace" wsoap:action="urn:rs_Trace" whttp:location="rs_Trace"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetPostCode" wsoap:action="urn:rs_GetPostCode" whttp:location="rs_GetPostCode"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation></wsdl2:binding><wsdl2:binding name="RemittanceServices_v2SOAP12Binding" interface="tns:ServiceInterface" type="http://www.w3.org/ns/wsdl/soap" wsoap:version="1.2" wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP"><wsdl2:operation ref="tns:rs_CashOut" wsoap:action="urn:rs_CashOut" whttp:location="rs_CashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_InquiryCashOut" wsoap:action="urn:rs_InquiryCashOut" whttp:location="rs_InquiryCashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_ReversalCashOut" wsoap:action="urn:rs_ReversalCashOut" whttp:location="rs_ReversalCashOut"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_ReversalSend" wsoap:action="urn:rs_ReversalSend" whttp:location="rs_ReversalSend"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetDeposit" wsoap:action="urn:rs_GetDeposit" whttp:location="rs_GetDeposit"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_StoreSend" wsoap:action="urn:rs_StoreSend" whttp:location="rs_StoreSend"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetCharge" wsoap:action="urn:rs_GetCharge" whttp:location="rs_GetCharge"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_Trace" wsoap:action="urn:rs_Trace" whttp:location="rs_Trace"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation><wsdl2:operation ref="tns:rs_GetPostCode" wsoap:action="urn:rs_GetPostCode" whttp:location="rs_GetPostCode"><wsdl2:output/><wsdl2:output/><wsdl2:outfault ref="tns:DataServiceFault"/></wsdl2:operation></wsdl2:binding><wsdl2:service name="RemittanceServices_v2" interface="tns:ServiceInterface"><wsdl2:endpoint name="LOCALSOAP12Endpoint" binding="tns:RemittanceServices_v2SOAP12Binding" address="local:///services/RemittanceServices_v2.LOCALSOAP12Endpoint/"/><wsdl2:endpoint name="HTTPEndpoint" binding="tns:RemittanceServices_v2HttpBinding" address="http://10.33.41.25:9763/services/RemittanceServices_v2.HTTPEndpoint/"/><wsdl2:endpoint name="SecureSOAP12Endpoint" binding="tns:RemittanceServices_v2SOAP12Binding" address="https://10.33.41.25:9443/services/RemittanceServices_v2.SecureSOAP12Endpoint/"/><wsdl2:endpoint name="SOAP11Endpoint" binding="tns:RemittanceServices_v2SOAP11Binding" address="http://10.33.41.25:9763/services/RemittanceServices_v2.SOAP11Endpoint/"/><wsdl2:endpoint name="SecureHTTPEndpoint" binding="tns:RemittanceServices_v2HttpBinding" address="https://10.33.41.25:9443/services/RemittanceServices_v2.SecureHTTPEndpoint/"/><wsdl2:endpoint name="LOCALSOAP11Endpoint" binding="tns:RemittanceServices_v2SOAP11Binding" address="local:///services/RemittanceServices_v2.LOCALSOAP11Endpoint/"/><wsdl2:endpoint name="SecureSOAP11Endpoint" binding="tns:RemittanceServices_v2SOAP11Binding" address="https://10.33.41.25:9443/services/RemittanceServices_v2.SecureSOAP11Endpoint/"/><wsdl2:endpoint name="SOAP12Endpoint" binding="tns:RemittanceServices_v2SOAP12Binding" address="http://10.33.41.25:9763/services/RemittanceServices_v2.SOAP12Endpoint/"/></wsdl2:service></wsdl2:description>
